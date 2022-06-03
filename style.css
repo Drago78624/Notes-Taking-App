@@ -1,0 +1,82 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+  font-family: verdana;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  box-shadow: 0 2px 10px lightgray;
+}
+
+.navbar {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .logo {
+    margin-bottom: 1rem;
+  }
+}
+
+.logo {
+  font-size: 1.7rem;
+  color: purple;
+}
+
+input[type="search"], input[type="submit"] {
+  font-size: 1.2rem;
+  padding: 0.2em 0.5em;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  border: 2px solid purple;
+  border-radius: 5px;
+  color: white;
+  background-color: purple;
+  transition: all 200ms;
+}
+
+input[type="submit"]:hover {
+  background-color: white;
+  color: purple;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+.note-field {
+  max-width: 700px;
+  width: 100%;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.form-container h2 {
+  margin-bottom: 1rem;
+}
